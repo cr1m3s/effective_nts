@@ -170,3 +170,28 @@ Use `gets_s` instead.
 
 
 #Input/Output
+
+#Preprocessor
+
+`#if #else #ifdef #error #endif`
+
+Header guards 
+
+`#ifndef BAR_H
+#define BAR_H
+int func(void) {return 1;}
+#endif
+`
+
+# Debugging, testing and analysis
+
+Assertion:
+
+-- static `static_assert`
+-- runtime `assert`
+
+The assertion’s predicate expression is often reported in a failed assertion message, which allows you to use && on a string literal with the assertion predicate to generate additional debugging information when an assertion fails.
+
+Compiler settings and flags
+
+Unit testing framework 'Google Test'
